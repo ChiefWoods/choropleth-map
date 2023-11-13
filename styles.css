@@ -1,0 +1,15 @@
+/* Main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: auto auto;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 0;
+}
