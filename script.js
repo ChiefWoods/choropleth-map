@@ -14,7 +14,7 @@ Promise.all([
     .style('font-size', '5.6rem')
     .style('font-family', 'Arial')
     .style('font-weight', 700)
-    .style('margin-bottom', '37.5px')
+    .style('margin-block', '37.5px')
 
   // Description
   d3.select('main')
@@ -23,7 +23,6 @@ Promise.all([
     .attr('id', 'description')
     .style('font-size', '1.6rem')
     .style('font-family', 'Arial')
-    .style('margin-bottom', '20px')
 
   // Main SVG
   const svg = d3.select('main')
@@ -66,7 +65,7 @@ Promise.all([
     .range(colorScheme);
 
   const legendXScale = d3.scaleLinear()
-    .domain([minBachelor, maxBachelor - step])
+    .domain([minBachelor, maxBachelor])
     .rangeRound([600, 860])
 
   const legendXAxis = d3.axisBottom(legendXScale)
